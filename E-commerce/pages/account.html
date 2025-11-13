@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Account | StyleHub</title>
+    <link rel="stylesheet" href="../assets/styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header-top">
+            <div class="container">
+                <div class="contact-info">
+                    <span>📧 support@stylehub.com</span>
+                    <span>📞 +1 (800) 123-4567</span>
+                </div>
+                <div class="user-actions">
+                    <a href="customer-service.html">Customer Service</a>
+                    <a href="store-locator.html">Store Locator</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="main-header">
+            <div class="container">
+                <div class="logo">
+                    <h1><a href="../index.html" style="text-decoration: none; color: inherit;">StyleHub</a></h1>
+                </div>
+                
+                <div class="search-bar">
+                    <input type="text" placeholder="Search for products, brands and more">
+                    <button>🔍</button>
+                </div>
+                
+                <div class="header-icons">
+                    <div class="icon-item">
+                        <span class="icon">👤</span>
+                        <span><a href="account.html" style="text-decoration: none; color: inherit;" class="active">Account</a></span>
+                    </div>
+                    <div class="icon-item">
+                        <span class="icon">❤️</span>
+                        <span><a href="wishlist.html" style="text-decoration: none; color: inherit;">Wishlist</a></span>
+                    </div>
+                    <div class="icon-item">
+                        <span class="icon">🛒</span>
+                        <span><a href="cart.html" style="text-decoration: none; color: inherit;">Bag</a></span>
+                        <span class="badge">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <nav class="main-nav">
+            <div class="container">
+                <ul>
+                    <li><a href="women.html">Women</a></li>
+                    <li><a href="men.html">Men</a></li>
+                    <li><a href="kids.html">Kids</a></li>
+                    <li><a href="home-living.html">Home & Living</a></li>
+                    <li><a href="beauty.html">Beauty</a></li>
+                    <li><a href="studio.html">Studio</a></li>
+                    <li><a href="sale.html">Sale</a></li>
+                    <li><a href="new-arrivals.html">New Arrivals</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- Breadcrumb -->
+    <div class="container">
+        <div class="breadcrumb">
+            <a href="../index.html">Home</a> / <span>My Account</span>
+        </div>
+    </div>
+    
+    <!-- Main Content -->
+    <section class="account-page">
+        <div class="container">
+            <h1>My Account</h1>
+            
+            <div class="account-grid">
+                <div class="account-sidebar">
+                    <div class="user-profile">
+                        <div class="profile-avatar">
+                            <img src="../assets/images/team/alex-johnson.svg" alt="User Profile" style="width: 100px; height: 100px; border-radius: 50%;">
+                        </div>
+                        <h3>Alex Johnson</h3>
+                        <p>alex.johnson@email.com</p>
+                    </div>
+                    
+                    <nav class="account-nav">
+                        <ul>
+                            <li><a href="#dashboard" class="active">Dashboard</a></li>
+                            <li><a href="#orders">My Orders</a></li>
+                            <li><a href="#wishlist">My Wishlist</a></li>
+                            <li><a href="#addresses">Address Book</a></li>
+                            <li><a href="#payment">Payment Methods</a></li>
+                            <li><a href="#reviews">My Reviews</a></li>
+                            <li><a href="#settings">Account Settings</a></li>
+                            <li><a href="#logout">Logout</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                
+                <div class="account-content">
+                    <div id="dashboard" class="account-section active">
+                        <h2>Dashboard</h2>
+                        
+                        <div class="dashboard-stats">
+                            <div class="stat-card">
+                                <h3>5</h3>
+                                <p>Orders</p>
+                            </div>
+                            
+                            <div class="stat-card">
+                                <h3>12</h3>
+                                <p>Wishlist Items</p>
+                            </div>
+                            
+                            <div class="stat-card">
+                                <h3>3</h3>
+                                <p>Pending Reviews</p>
+                            </div>
+                        </div>
+                        
+                        <div class="recent-orders">
+                            <h3>Recent Orders</h3>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Order #</th>
+                                        <th>Date</th>
+                                        <th>Total</th>
+                                        <th>Status</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>#SH12345</td>
+                                        <td>Oct 20, 2025</td>
+                                        <td>$89.99</td>
+                                        <td><span class="status delivered">Delivered</span></td>
+                                        <td><a href="#">View</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>#SH12344</td>
+                                        <td>Oct 15, 2025</td>
+                                        <td>$145.50</td>
+                                        <td><span class="status shipped">Shipped</span></td>
+                                        <td><a href="#">View</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>#SH12343</td>
+                                        <td>Oct 10, 2025</td>
+                                        <td>$67.25</td>
+                                        <td><span class="status processing">Processing</span></td>
+                                        <td><a href="#">View</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <div class="account-actions">
+                            <h3>Quick Actions</h3>
+                            <div class="action-buttons">
+                                <button class="action-btn">Track Order</button>
+                                <button class="action-btn">Return Item</button>
+                                <button class="action-btn">Write Review</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="orders" class="account-section">
+                        <h2>My Orders</h2>
+                        <p>Manage your orders and view order history.</p>
+                        <!-- Order details would be populated here -->
+                    </div>
+                    
+                    <div id="wishlist" class="account-section">
+                        <h2>My Wishlist</h2>
+                        <p>Your saved items for later.</p>
+                        <!-- Wishlist items would be populated here -->
+                    </div>
+                    
+                    <div id="addresses" class="account-section">
+                        <h2>Address Book</h2>
+                        <p>Manage your shipping and billing addresses.</p>
+                        <!-- Address forms would be populated here -->
+                    </div>
+                    
+                    <div id="payment" class="account-section">
+                        <h2>Payment Methods</h2>
+                        <p>Manage your payment options.</p>
+                        <!-- Payment method forms would be populated here -->
+                    </div>
+                    
+                    <div id="reviews" class="account-section">
+                        <h2>My Reviews</h2>
+                        <p>View and manage your product reviews.</p>
+                        <!-- Review management would be populated here -->
+                    </div>
+                    
+                    <div id="settings" class="account-section">
+                        <h2>Account Settings</h2>
+                        <p>Update your personal information and preferences.</p>
+                        <!-- Account settings forms would be populated here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>StyleHub</h3>
+                    <p>Your one-stop destination for the latest fashion trends and styles.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="faq.html">FAQs</a></li>
+                        <li><a href="shipping.html">Shipping Policy</a></li>
+                        <li><a href="returns.html">Returns & Exchanges</a></li>
+                        <li><a href="track-order.html">Track Order</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="sitemap.html">Sitemap</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to get special offers and updates</p>
+                    <div class="newsletter">
+                        <input type="email" placeholder="Enter your email">
+                        <button>Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 StyleHub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="../assets/scripts/script.js"></script>
+    <script>
+        // Account navigation
+        document.addEventListener('DOMContentLoaded', function() {
+            const navLinks = document.querySelectorAll('.account-nav a');
+            const sections = document.querySelectorAll('.account-section');
+            
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    // Remove active class from all links and sections
+                    navLinks.forEach(l => l.classList.remove('active'));
+                    sections.forEach(s => s.classList.remove('active'));
+                    
+                    // Add active class to clicked link
+                    this.classList.add('active');
+                    
+                    // Show corresponding section
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetSection = document.getElementById(targetId);
+                    if (targetSection) {
+                        targetSection.classList.add('active');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs | StyleHub</title>
+    <link rel="stylesheet" href="../assets/styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header-top">
+            <div class="container">
+                <div class="contact-info">
+                    <span>📧 support@stylehub.com</span>
+                    <span>📞 +1 (800) 123-4567</span>
+                </div>
+                <div class="user-actions">
+                    <a href="customer-service.html">Customer Service</a>
+                    <a href="store-locator.html">Store Locator</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="main-header">
+            <div class="container">
+                <div class="logo">
+                    <h1><a href="../index.html" style="text-decoration: none; color: inherit;">StyleHub</a></h1>
+                </div>
+                
+                <div class="search-bar">
+                    <input type="text" placeholder="Search for products, brands and more">
+                    <button>🔍</button>
+                </div>
+                
+                <div class="header-icons">
+                    <div class="icon-item">
+                        <span class="icon">👤</span>
+                        <span><a href="account.html" style="text-decoration: none; color: inherit;">Account</a></span>
+                    </div>
+                    <div class="icon-item">
+                        <span class="icon">❤️</span>
+                        <span><a href="wishlist.html" style="text-decoration: none; color: inherit;">Wishlist</a></span>
+                    </div>
+                    <div class="icon-item">
+                        <span class="icon">🛒</span>
+                        <span><a href="cart.html" style="text-decoration: none; color: inherit;">Bag</a></span>
+                        <span class="badge">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <nav class="main-nav">
+            <div class="container">
+                <ul>
+                    <li><a href="women.html">Women</a></li>
+                    <li><a href="men.html">Men</a></li>
+                    <li><a href="kids.html">Kids</a></li>
+                    <li><a href="home-living.html">Home & Living</a></li>
+                    <li><a href="beauty.html">Beauty</a></li>
+                    <li><a href="studio.html">Studio</a></li>
+                    <li><a href="sale.html">Sale</a></li>
+                    <li><a href="new-arrivals.html">New Arrivals</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- Breadcrumb -->
+    <div class="container">
+        <div class="breadcrumb">
+            <a href="../index.html">Home</a> / <span>FAQs</span>
+        </div>
+    </div>
+    
+    <!-- Main Content -->
+    <section class="faq-page">
+        <div class="container">
+            <h1>Frequently Asked Questions</h1>
+            <p>Find answers to common questions about our products, services, and policies.</p>
+            
+            <div class="faq-search">
+                <input type="text" id="faqSearch" placeholder="Search FAQs...">
+                <button>🔍</button>
+            </div>
+            
+            <div class="faq-categories">
+                <button class="category-btn active" data-category="all">All</button>
+                <button class="category-btn" data-category="orders">Orders</button>
+                <button class="category-btn" data-category="shipping">Shipping</button>
+                <button class="category-btn" data-category="returns">Returns & Exchanges</button>
+                <button class="category-btn" data-category="products">Products</button>
+                <button class="category-btn" data-category="account">Account</button>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item" data-category="orders">
+                    <div class="faq-question">
+                        <h3>How do I place an order?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>To place an order, simply browse our products, add items to your cart, and proceed to checkout. You'll need to provide your shipping information and payment details to complete your purchase.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-category="orders">
+                    <div class="faq-question">
+                        <h3>Can I modify or cancel my order after placing it?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You can modify or cancel your order within 30 minutes of placing it. After that, please contact our customer service team, and we'll do our best to assist you. If the order has already been processed, modifications may not be possible.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-category="shipping">
+                    <div class="faq-question">
+                        <h3>What are your shipping options and delivery times?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We offer several shipping options:</p>
+                        <ul>
+                            <li>Standard Shipping (5-7 business days): Free on orders over $50</li>
+                            <li>Express Shipping (2-3 business days): $9.99</li>
+                            <li>Overnight Shipping (1 business day): $19.99</li>
+                        </ul>
+                        <p>Delivery times may vary based on your location and current order volume.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-category="shipping">
+                    <div class="faq-question">
+                        <h3>Do you ship internationally?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we ship to over 50 countries worldwide. International shipping rates and delivery times vary by destination. At checkout, you'll see the available shipping options for your country.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-category="returns">
+                    <div class="faq-question">
+                        <h3>What is your return policy?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We offer a 30-day return policy on most items. Items must be in new, unused condition with all original tags attached. Some items like swimwear, lingerie, and beauty products are final sale and cannot be returned for hygiene reasons.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-category="returns">
+                    <div class="faq-question">
+                        <h3>How do I initiate a return or exchange?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>To initiate a return or exchange, log into your account and go to "My Orders". Select the order you want to return and follow the prompts. You can also contact our customer service team for assistance. Return shipping is free for defective items or shipping errors.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-category="products">
+                    <div class="faq-question">
+                        <h3>How do I determine my size?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We provide detailed size charts for each product. You can find these on the product page under the "Size Guide" tab. If you're between sizes, we recommend sizing up for a comfortable fit. For specific sizing questions, feel free to contact our customer service team.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-category="products">
+                    <div class="faq-question">
+                        <h3>Are your products authentic?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, all products sold on StyleHub are 100% authentic. We work directly with brands and authorized distributors to ensure the authenticity of all items. We do not sell counterfeit or replica products.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-category="account">
+                    <div class="faq-question">
+                        <h3>How do I create an account?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You can create an account by clicking on the "Account" icon in the header and selecting "Sign Up". You'll need to provide your email address, create a password, and enter some basic information. Having an account allows you to track orders, save payment methods, and access your wishlist.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-category="account">
+                    <div class="faq-question">
+                        <h3>I forgot my password. How can I reset it?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>If you've forgotten your password, click on "Sign In" and then select "Forgot Password". Enter your email address, and we'll send you a link to reset your password. The link will expire after 24 hours for security reasons.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="need-more-help">
+                <h2>Need More Help?</h2>
+                <p>If you can't find the answer to your question, our customer service team is here to help.</p>
+                <div class="help-options">
+                    <div class="help-option">
+                        <h3>📞 Live Chat</h3>
+                        <p>Available 24/7</p>
+                        <button class="chat-button">Start Chat</button>
+                    </div>
+                    
+                    <div class="help-option">
+                        <h3>📧 Email Us</h3>
+                        <p>support@stylehub.com</p>
+                        <p>Response within 24 hours</p>
+                    </div>
+                    
+                    <div class="help-option">
+                        <h3>📱 Call Us</h3>
+                        <p>+1 (800) 123-4567</p>
+                        <p>Mon-Fri, 9AM-8PM EST</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>StyleHub</h3>
+                    <p>Your one-stop destination for the latest fashion trends and styles.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="faq.html" class="active">FAQs</a></li>
+                        <li><a href="shipping.html">Shipping Policy</a></li>
+                        <li><a href="returns.html">Returns & Exchanges</a></li>
+                        <li><a href="track-order.html">Track Order</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="sitemap.html">Sitemap</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to get special offers and updates</p>
+                    <div class="newsletter">
+                        <input type="email" placeholder="Enter your email">
+                        <button>Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 StyleHub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="../assets/scripts/script.js"></script>
+    <script>
+        // FAQ functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            // Toggle FAQ answers
+            const faqQuestions = document.querySelectorAll('.faq-question');
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', function() {
+                    const faqItem = this.parentElement;
+                    const answer = faqItem.querySelector('.faq-answer');
+                    const toggle = this.querySelector('.faq-toggle');
+                    
+                    if (answer.style.display === 'block') {
+                        answer.style.display = 'none';
+                        toggle.textContent = '+';
+                    } else {
+                        answer.style.display = 'block';
+                        toggle.textContent = '-';
+                    }
+                });
+            });
+            
+            // Category filtering
+            const categoryButtons = document.querySelectorAll('.category-btn');
+            categoryButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    categoryButtons.forEach(btn => btn.classList.remove('active'));
+                    
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    // Get category
+                    const category = this.getAttribute('data-category');
+                    
+                    // Show/hide FAQ items
+                    const faqItems = document.querySelectorAll('.faq-item');
+                    faqItems.forEach(item => {
+                        if (category === 'all' || item.getAttribute('data-category') === category) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>

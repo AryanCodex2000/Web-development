@@ -1,0 +1,6 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+    <rect width="400" height="300" fill="#FF6B6B" />
+    <circle cx="200" cy="100" r="50" fill="white" opacity="0.3" />
+    <rect x="150" y="170" width="100" height="80" fill="white" opacity="0.3" />
+    <text x="200" y="280" font-family="Arial" font-size="20" fill="white" text-anchor="middle">Customer Service</text>
+  </svg>

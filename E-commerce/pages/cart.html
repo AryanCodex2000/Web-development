@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Bag | StyleHub</title>
+    <link rel="stylesheet" href="../assets/styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header-top">
+            <div class="container">
+                <div class="contact-info">
+                    <span>📧 support@stylehub.com</span>
+                    <span>📞 +1 (800) 123-4567</span>
+                </div>
+                <div class="user-actions">
+                    <a href="customer-service.html">Customer Service</a>
+                    <a href="store-locator.html">Store Locator</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="main-header">
+            <div class="container">
+                <div class="logo">
+                    <h1><a href="../index.html" style="text-decoration: none; color: inherit;">StyleHub</a></h1>
+                </div>
+                
+                <div class="search-bar">
+                    <input type="text" placeholder="Search for products, brands and more">
+                    <button>🔍</button>
+                </div>
+                
+                <div class="header-icons">
+                    <div class="icon-item">
+                        <span class="icon">👤</span>
+                        <span><a href="account.html" style="text-decoration: none; color: inherit;">Account</a></span>
+                    </div>
+                    <div class="icon-item">
+                        <span class="icon">❤️</span>
+                        <span><a href="wishlist.html" style="text-decoration: none; color: inherit;">Wishlist</a></span>
+                    </div>
+                    <div class="icon-item">
+                        <span class="icon">🛒</span>
+                        <span><a href="cart.html" style="text-decoration: none; color: inherit;" class="active">Bag</a></span>
+                        <span class="badge">3</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <nav class="main-nav">
+            <div class="container">
+                <ul>
+                    <li><a href="women.html">Women</a></li>
+                    <li><a href="men.html">Men</a></li>
+                    <li><a href="kids.html">Kids</a></li>
+                    <li><a href="home-living.html">Home & Living</a></li>
+                    <li><a href="beauty.html">Beauty</a></li>
+                    <li><a href="studio.html">Studio</a></li>
+                    <li><a href="sale.html">Sale</a></li>
+                    <li><a href="new-arrivals.html">New Arrivals</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- Breadcrumb -->
+    <div class="container">
+        <div class="breadcrumb">
+            <a href="../index.html">Home</a> / <span>Shopping Bag</span>
+        </div>
+    </div>
+    
+    <!-- Main Content -->
+    <section class="cart-page">
+        <div class="container">
+            <h1>Shopping Bag</h1>
+            
+            <div class="cart-container">
+                <div class="cart-items">
+                    <div class="cart-item">
+                        <div class="item-image">
+                            <img src="../assets/images/products/casual-t-shirt.svg" alt="Product 1">
+                        </div>
+                        <div class="item-details">
+                            <h3>Casual T-Shirt</h3>
+                            <p>Size: M | Color: Red</p>
+                            <p class="item-price">$29.99</p>
+                        </div>
+                        <div class="item-quantity">
+                            <button class="qty-btn">-</button>
+                            <input type="number" value="1" min="1" max="10">
+                            <button class="qty-btn">+</button>
+                        </div>
+                        <div class="item-total">
+                            <p>$29.99</p>
+                        </div>
+                        <div class="item-actions">
+                            <button class="remove-btn">Remove</button>
+                        </div>
+                    </div>
+                    
+                    <div class="cart-item">
+                        <div class="item-image">
+                            <img src="../assets/images/products/designer-jeans.svg" alt="Product 2">
+                        </div>
+                        <div class="item-details">
+                            <h3>Designer Jeans</h3>
+                            <p>Size: 32 | Color: Blue</p>
+                            <p class="item-price">$59.99</p>
+                        </div>
+                        <div class="item-quantity">
+                            <button class="qty-btn">-</button>
+                            <input type="number" value="1" min="1" max="10">
+                            <button class="qty-btn">+</button>
+                        </div>
+                        <div class="item-total">
+                            <p>$59.99</p>
+                        </div>
+                        <div class="item-actions">
+                            <button class="remove-btn">Remove</button>
+                        </div>
+                    </div>
+                    
+                    <div class="cart-item">
+                        <div class="item-image">
+                            <img src="../assets/images/products/sports-shoes.svg" alt="Product 3">
+                        </div>
+                        <div class="item-details">
+                            <h3>Sports Shoes</h3>
+                            <p>Size: 9 | Color: White</p>
+                            <p class="item-price">$89.99</p>
+                        </div>
+                        <div class="item-quantity">
+                            <button class="qty-btn">-</button>
+                            <input type="number" value="1" min="1" max="10">
+                            <button class="qty-btn">+</button>
+                        </div>
+                        <div class="item-total">
+                            <p>$89.99</p>
+                        </div>
+                        <div class="item-actions">
+                            <button class="remove-btn">Remove</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="cart-summary">
+                    <h2>Order Summary</h2>
+                    <div class="summary-details">
+                        <div class="summary-row">
+                            <span>Subtotal</span>
+                            <span>$179.97</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Shipping</span>
+                            <span>Free</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Tax</span>
+                            <span>$12.60</span>
+                        </div>
+                        <div class="summary-row discount">
+                            <span>Discount</span>
+                            <span>-$10.00</span>
+                        </div>
+                        <div class="summary-row total">
+                            <span>Total</span>
+                            <span>$182.57</span>
+                        </div>
+                    </div>
+                    
+                    <div class="promo-code">
+                        <input type="text" placeholder="Enter promo code">
+                        <button>Apply</button>
+                    </div>
+                    
+                    <button class="checkout-btn">Proceed to Checkout</button>
+                    
+                    <div class="continue-shopping">
+                        <a href="../index.html">← Continue Shopping</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="recommended-products">
+                <h2>You May Also Like</h2>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <img src="../assets/images/products/handbag.svg" alt="Accessory">
+                        <div class="product-info">
+                            <h3>Stylish Belt</h3>
+                            <div class="price">$24.99</div>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <img src="../assets/images/products/sunglasses.svg" alt="Watch">
+                        <div class="product-info">
+                            <h3>Fashion Watch</h3>
+                            <div class="price">$49.99</div>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <img src="../assets/images/products/evening-gown.svg" alt="Bag">
+                        <div class="product-info">
+                            <h3>Designer Bag</h3>
+                            <div class="price">$39.99</div>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>StyleHub</h3>
+                    <p>Your one-stop destination for the latest fashion trends and styles.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="faq.html">FAQs</a></li>
+                        <li><a href="shipping.html">Shipping Policy</a></li>
+                        <li><a href="returns.html">Returns & Exchanges</a></li>
+                        <li><a href="track-order.html">Track Order</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="sitemap.html">Sitemap</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to get special offers and updates</p>
+                    <div class="newsletter">
+                        <input type="email" placeholder="Enter your email">
+                        <button>Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 StyleHub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="../assets/scripts/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+<svg width="300" height="400" xmlns="http://www.w3.org/2000/svg">
+    <rect width="300" height="400" fill="#F5F5DC" />
+    <circle cx="150" cy="150" r="80" fill="#ffa502" />
+    <text x="150" y="350" font-family="Arial" font-size="20" fill="white" text-anchor="middle">Formal Shirt</text>
+  </svg>
