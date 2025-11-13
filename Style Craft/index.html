@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StyleCraft - Fashion Forward</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="top-banner">
+            <p>🎉 New Year Sale! Up to 70% OFF on Premium Collection</p>
+        </div>
+        
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>StyleCraft</h2>
+                </div>
+                
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#women">Women <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="#dresses">Dresses</a>
+                            <a href="#tops">Tops & Blouses</a>
+                            <a href="#bottoms">Bottoms</a>
+                            <a href="#outerwear">Outerwear</a>
+                            <a href="#accessories">Accessories</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#men">Men <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="#shirts">Shirts</a>
+                            <a href="#tees">T-Shirts</a>
+                            <a href="#pants">Pants</a>
+                            <a href="#jackets">Jackets</a>
+                        </div>
+                    </li>
+                    <li><a href="#new-arrivals">New Arrivals</a></li>
+                    <li><a href="#sale">Sale</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <div class="search-box">
+                        <input type="text" placeholder="Search styles...">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <a href="#account" class="nav-icon"><i class="fas fa-user"></i></a>
+                    <a href="#wishlist" class="nav-icon"><i class="fas fa-heart"></i></a>
+                    <a href="#cart" class="nav-icon cart-icon">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                </div>
+                
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-slider">
+            <div class="slide active">
+                <div class="slide-content">
+                    <div class="slide-text">
+                        <h1>Express Your Unique Style</h1>
+                        <p>Discover curated fashion pieces that tell your story. From casual chic to elegant evening wear, we've got you covered.</p>
+                        <div class="hero-buttons">
+                            <a href="#women" class="btn btn-primary">Shop Women</a>
+                            <a href="#men" class="btn btn-secondary">Shop Men</a>
+                        </div>
+                    </div>
+                    <div class="slide-image">
+                        <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600&h=800&fit=crop" alt="Fashion Model">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="slide">
+                <div class="slide-content">
+                    <div class="slide-text">
+                        <h1>New Year, New You</h1>
+                        <p>Start 2025 with confidence. Our latest collection features bold colors and contemporary designs.</p>
+                        <div class="hero-buttons">
+                            <a href="#new-arrivals" class="btn btn-primary">Explore Collection</a>
+                            <a href="#sale" class="btn btn-secondary">View Sale</a>
+                        </div>
+                    </div>
+                    <div class="slide-image">
+                        <img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=600&h=800&fit=crop" alt="Fashion Model">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="slider-dots">
+            <span class="dot active" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature">
+                    <i class="fas fa-shipping-fast"></i>
+                    <h3>Free Shipping</h3>
+                    <p>On orders over $75</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-undo"></i>
+                    <h3>Easy Returns</h3>
+                    <p>30-day return policy</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Secure Payment</h3>
+                    <p>100% secure checkout</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-headset"></i>
+                    <h3>24/7 Support</h3>
+                    <p>Customer care always</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <div class="container">
+            <h2 class="section-title">Shop by Category</h2>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=400&h=500&fit=crop" alt="Women's Dresses">
+                    <div class="category-overlay">
+                        <h3>Women's Dresses</h3>
+                        <p>From casual to formal</p>
+                        <a href="#dresses" class="btn btn-white">Shop Now</a>
+                    </div>
+                </div>
+                
+                <div class="category-card">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=500&fit=crop" alt="Men's Shirts">
+                    <div class="category-overlay">
+                        <h3>Men's Shirts</h3>
+                        <p>Professional & casual</p>
+                        <a href="#shirts" class="btn btn-white">Shop Now</a>
+                    </div>
+                </div>
+                
+                <div class="category-card">
+                    <img src="https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=400&h=500&fit=crop" alt="Accessories">
+                    <div class="category-overlay">
+                        <h3>Accessories</h3>
+                        <p>Complete your look</p>
+                        <a href="#accessories" class="btn btn-white">Shop Now</a>
+                    </div>
+                </div>
+                
+                <div class="category-card">
+                    <img src="https://images.unsplash.com/photo-1552374196-c4e7ffc6e126?w=400&h=500&fit=crop" alt="Outerwear">
+                    <div class="category-overlay">
+                        <h3>Outerwear</h3>
+                        <p>Stay warm in style</p>
+                        <a href="#outerwear" class="btn btn-white">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Arrivals Section -->
+    <section class="new-arrivals" id="new-arrivals">
+        <div class="container">
+            <h2 class="section-title">New Arrivals</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=300&h=400&fit=crop" alt="Floral Maxi Dress">
+                        <div class="product-badge">New</div>
+                        <div class="product-actions">
+                            <button class="action-btn wishlist-btn"><i class="fas fa-heart"></i></button>
+                            <button class="action-btn quick-view-btn"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Floral Maxi Dress</h3>
+                        <p class="product-price">$89.99 <span class="old-price">$129.99</span></p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(24)</span>
+                        </div>
+                        <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=400&fit=crop" alt="Classic White Shirt">
+                        <div class="product-badge sale">Sale</div>
+                        <div class="product-actions">
+                            <button class="action-btn wishlist-btn"><i class="fas fa-heart"></i></button>
+                            <button class="action-btn quick-view-btn"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Classic White Shirt</h3>
+                        <p class="product-price">$49.99 <span class="old-price">$79.99</span></p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(18)</span>
+                        </div>
+                        <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=300&h=400&fit=crop" alt="Designer Handbag">
+                        <div class="product-actions">
+                            <button class="action-btn wishlist-btn"><i class="fas fa-heart"></i></button>
+                            <button class="action-btn quick-view-btn"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Designer Handbag</h3>
+                        <p class="product-price">$159.99</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(32)</span>
+                        </div>
+                        <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1552374196-c4e7ffc6e126?w=300&h=400&fit=crop" alt="Wool Blend Coat">
+                        <div class="product-badge">New</div>
+                        <div class="product-actions">
+                            <button class="action-btn wishlist-btn"><i class="fas fa-heart"></i></button>
+                            <button class="action-btn quick-view-btn"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Wool Blend Coat</h3>
+                        <p class="product-price">$199.99 <span class="old-price">$249.99</span></p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(15)</span>
+                        </div>
+                        <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Style Quiz Section -->
+    <section class="style-quiz">
+        <div class="container">
+            <div class="quiz-content">
+                <div class="quiz-text">
+                    <h2>Find Your Perfect Style</h2>
+                    <p>Take our quick style quiz and get personalized recommendations based on your preferences and lifestyle.</p>
+                    <a href="#quiz" class="btn btn-primary">Start Style Quiz</a>
+                </div>
+                <div class="quiz-image">
+                    <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=500&h=400&fit=crop" alt="Style Quiz">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Size Guide Section -->
+    <section class="size-guide">
+        <div class="container">
+            <h2 class="section-title">Size Guide</h2>
+            <div class="size-guide-content">
+                <div class="size-tabs">
+                    <button class="size-tab active" data-tab="women">Women's Sizes</button>
+                    <button class="size-tab" data-tab="men">Men's Sizes</button>
+                </div>
+                
+                <div class="size-table active" id="women-sizes">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Size</th>
+                                <th>Bust (in)</th>
+                                <th>Waist (in)</th>
+                                <th>Hip (in)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>XS</td><td>32-34</td><td>24-26</td><td>34-36</td></tr>
+                            <tr><td>S</td><td>34-36</td><td>26-28</td><td>36-38</td></tr>
+                            <tr><td>M</td><td>36-38</td><td>28-30</td><td>38-40</td></tr>
+                            <tr><td>L</td><td>38-40</td><td>30-32</td><td>40-42</td></tr>
+                            <tr><td>XL</td><td>40-42</td><td>32-34</td><td>42-44</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="size-table" id="men-sizes">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Size</th>
+                                <th>Chest (in)</th>
+                                <th>Waist (in)</th>
+                                <th>Length (in)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>S</td><td>34-36</td><td>28-30</td><td>28-29</td></tr>
+                            <tr><td>M</td><td>38-40</td><td>32-34</td><td>29-30</td></tr>
+                            <tr><td>L</td><td>42-44</td><td>36-38</td><td>30-31</td></tr>
+                            <tr><td>XL</td><td>46-48</td><td>40-42</td><td>31-32</td></tr>
+                            <tr><td>XXL</td><td>50-52</td><td>44-46</td><td>32-33</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay in Style</h2>
+                <p>Subscribe to our newsletter and be the first to know about new arrivals, exclusive offers, and style tips.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>StyleCraft</h3>
+                    <p>Your destination for contemporary fashion that empowers your unique style.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#careers">Careers</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#shipping">Shipping Info</a></li>
+                        <li><a href="#returns">Returns</a></li>
+                        <li><a href="#size-guide">Size Guide</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                        <li><a href="#terms">Terms of Service</a></li>
+                        <li><a href="#cookies">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 StyleCraft. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
